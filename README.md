@@ -38,7 +38,7 @@ echo "<h1>Auto-Healing Lab $(hostname -f)</h1>" | sudo tee /var/www/html/index.h
 ```
 
 #### **Stress CPU** (`scripts/stress_cpu.sh`):
-```bash
+```
 # SSH into instance (or use SSM)
 sudo amazon-linux-extras install epel -y
 sudo yum install stress -y
@@ -49,8 +49,3 @@ stress --cpu 2 --timeout 300  # Simulate 100% CPU for 5 mins
 ```bash
 # Clone repo
 git clone https://github.com/trucle9100/AWS-autohealing-project.git
-
-
-
-
-
