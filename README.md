@@ -20,6 +20,7 @@ Deploy a self-healing web server that automatically recovers from failures using
 
 ## 📸 Visuals
   Architecture:
+  
 ![Architecture](diagram/autohealing_diagram.png)
 
 | Results | Image |
