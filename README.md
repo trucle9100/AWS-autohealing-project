@@ -51,9 +51,3 @@ stress --cpu 2 --timeout 300  # Simulate 100% CPU for 5 mins
 ```bash
 # Clone repo
 git clone https://github.com/trucle9100/AWS-autohealing-project.git
-
-truc
-```
-
-
-TEST!!!
