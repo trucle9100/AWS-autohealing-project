@@ -21,8 +21,7 @@ Deploy a self-healing web server that automatically recovers from failures using
 ## 📸 Screenshots
 | Description | Image |
 |-------------|-------|
-| CloudWatch Alarm | ![Alarm](images/cloudwatch-alarm.png) |
-| SNS Email Alert | ![Alert](images/sns-alert.png) |
+| SNS Email Alert | ![Alert](images/RecoveryEmail.png) |
 
 ## 🚀 How to Deploy
 ```bash
