@@ -30,7 +30,7 @@ Deploy a self-healing web server that automatically recovers from failures using
 
 ### **4. Code Snippets**
 #### **User Data Script** (`scripts/install_httpd.sh`):
-```bash
+```bash4
 #!/bin/bash
 # Install Apache and stress tool
 sudo yum update -y
