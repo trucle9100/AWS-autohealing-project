@@ -15,19 +15,16 @@ Deploy a self-healing web server that automatically recovers from failures using
 
 ## 🎯 Key Features
 - **Automated Recovery**: EC2 reboots if CPU >80% for 5 minutes.
-- **Multi-Notification**: Alerts via email + Slack (AWS Chatbot).
-- **Pre-Recovery Logs**: Lambda saves logs to S3 before reboot (optional).
+- **Notification**: Alerts via email.
+
 
 ## 📸 Screenshots
 | Description | Image |
 |-------------|-------|
+| CloudWatch CPU Alarm | ![Alert](images/ThresholdAlarm.png) |
 | SNS Email Alert | ![Alert](images/RecoveryEmail.png) |
 
 ## 🚀 How to Deploy
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/aws-autohealing-lab.git
-
-# Run Terraform (optional)
-cd terraform
-terraform init && terraform apply
+git clone https://github.com/trucle9100/AWS-autohealing-project.git
