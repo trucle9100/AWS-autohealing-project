@@ -18,31 +18,15 @@ Deploy a self-healing web server that automatically recovers from failures using
 - **Notification**: Alerts via email.
 
 
-## 📸 Screenshots
+## 📸 Visuals
+  Architecture:  
+  ![Architecture](https://i.imgur.com/JfQ1W9x.png)  
 | Description | Image |
 |-------------|-------|
 | CloudWatch CPU Alarm | ![Alert](images/ThresholdAlarm.png) |
 | SNS Email Alert | ![Alert](images/RecoveryEmail.png) |
 
-## 🚀 How to Deploy
-```bash
-# Clone repo
-git clone https://github.com/trucle9100/AWS-autohealing-project.git
-```
-
----
-
-### **3. Add Visuals**
-- **Diagrams**: Use [draw.io](https://app.diagrams.net/) or [Excalidraw](https://excalidraw.com/) to create architecture diagrams.  
-  Example:  
-  ![Architecture](https://i.imgur.com/JfQ1W9x.png)  
-- **Screenshots**:  
-  - CloudWatch alarm configuration.  
-  - SNS email/Slack notification.  
-
----
-
-### **4. Include Code Snippets**
+### **4. Code Snippets**
 #### **User Data Script** (`scripts/install_httpd.sh`):
 ```bash
 #!/bin/bash
@@ -51,3 +35,22 @@ sudo yum update -y
 sudo yum install -y httpd stress
 sudo systemctl enable --now httpd
 echo "<h1>Auto-Healing Lab $(hostname -f)</h1>" | sudo tee /var/www/html/index.html
+```
+
+#### **Stress CPU** (`scripts/stress_cpu.sh`):
+```bash
+# SSH into instance (or use SSM)
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
+stress --cpu 2 --timeout 300  # Simulate 100% CPU for 5 mins
+```
+
+## 🚀 How to Deploy
+```bash
+# Clone repo
+git clone https://github.com/trucle9100/AWS-autohealing-project.git
+
+
+
+
+
