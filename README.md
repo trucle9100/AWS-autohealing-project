@@ -28,6 +28,7 @@ Deploy a self-healing web server that automatically recovers from failures using
 ```bash
 # Clone repo
 git clone https://github.com/trucle9100/AWS-autohealing-project.git
+```
 
 ---
 
