@@ -4,7 +4,7 @@
 Deploy a self-healing web server that automatically recovers from failures using CloudWatch alarms and SNS notifications.
 
 ## 🛠️ Technologies Used
-- **AWS Services**: EC2, CloudWatch, SNS, Lambda (optional)
+- **AWS Services**: EC2, CloudWatch, SNS
 - **Tools**: AWS CLI
 
 ## 📋 Steps
