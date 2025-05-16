@@ -38,7 +38,7 @@ echo "<h1>Auto-Healing Lab $(hostname -f)</h1>" | sudo tee /var/www/html/index.h
 ```
 
 #### **Stress CPU** (`scripts/stress_cpu.sh`):
-```
+```bash
 # SSH into instance (or use SSM)
 sudo amazon-linux-extras install epel -y
 sudo yum install stress -y
