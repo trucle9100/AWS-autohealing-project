@@ -19,9 +19,10 @@ Deploy a self-healing web server that automatically recovers from failures using
 
 
 ## 📸 Visuals
-  Architecture:  
-  ![Architecture](diagrams/autohealing_project.drawio.png)  
-| Description | Image |
+  Architecture:
+![Architecture](diagrams/autohealing_project.drawio.png)
+
+| Results | Image |
 |-------------|-------|
 | CloudWatch CPU Alarm | ![Alert](images/ThresholdAlarm.png) |
 | SNS Email Alert | ![Alert](images/RecoveryEmail.png) |
