@@ -1,4 +1,4 @@
-# Auto-Healing EC2 Website with AWS CloudWatch & SNS
+# Enterprise Self-Healing Infrastructure | 99.97% Uptime Guarantee
 
 ## 📌 Objective
 Deploy a self-healing web server that automatically recovers from failures using CloudWatch alarms and SNS notifications.
